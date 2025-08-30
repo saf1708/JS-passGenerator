@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Password Generator</h1>
+      </div>
+
+      <div class="text-area">
+        <input
+          readonly
+          placeholder="Password"
+          id="text-area"
+          data-passwordDisplay
+        />
+        <button class="copyBtn">
+            <span class="data_copyMsg"></span> 
+            <img src="assets/ChatGPT Image Aug 29, 2025, 08_24_01 PM.png" alt="copy" width="18px" height="18px">
+        </button>
+      </div>
+
+      <div class="container2">
+
+        <div class="pass-length">
+          <p>Password Length</p>
+          <p class="passwordLengthNumber">0</p>
+        </div>
+
+        <div class="range1">
+          <input type="range" min="1" max="20" id="pass-length" class="range" />
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" name="uppercase" id="uppercase" />
+          <label for="uppercase">Include Uppercase</label>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" name="lowercase" id="lowercase" />
+          <label for="lowercase">Include Lowercase</label>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" name="number" id="number" />
+          <label for="number">Include Number</label>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" name="symbol" id="symbol" />
+          <label for="symbol">Include Symbol</label>
+        </div>
+
+        <div class="strength">
+          <p id="Strength">Strength</p>
+        </div>
+
+        <div class="btn">
+          <button id="passGenerate">GENERATE PASSWORD</button>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
